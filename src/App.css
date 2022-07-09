@@ -1,0 +1,156 @@
+body {
+	background: #141414;
+	color: #fff;
+}
+
+/* .movie-app .row{
+	overflow-x: auto;
+	flex-wrap: nowrap; 
+} */
+
+
+a,
+a:hover,
+a:focus {
+    color: inherit;
+}
+
+.movie-card {
+    max-width: 300px;
+	max-height: 400px;
+	min-height: 400px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.1);
+    background-position: center;
+    overflow: hidden;
+    position: relative;
+    margin: 10px auto;
+    border-radius: 10px;
+}
+.movie-card img {
+    transition: all linear 0.25s;
+	height: auto;
+}
+.movie-card .movie-title {
+    position: absolute;
+    left: 30px;
+    bottom: 70px;
+    font-size: 30px;
+    color: orangered;
+    text-shadow: 0px 0px 20px rgba(0, 0, 0, 0.5);
+    font-weight: bold;
+    transition: all linear 0.25s;
+	line-height: 1.1;
+}
+.movie-card .movie-year {
+    position: absolute;
+    bottom: 50px;
+    left: 30px;
+    color: orangered;
+    font-size: 18px;
+	font-weight: 800;
+    transition: all linear 0.25s;
+}
+
+.movie-card .movie-info {
+	position: absolute;
+	font-size: 30px;
+	font-weight: 700;
+    bottom: 10px;
+    right: 15px;
+    color: orangered;
+    transition: all linear 0.25s;
+	background: transparent;
+	border: none;
+}
+
+.movie-card:hover img {
+    filter: grayscale(100%);
+	filter: opacity(0.3);
+}
+.movie-card:hover .movie-title {
+	color: orangered;
+    bottom: 80px;
+}
+.movie-card:hover .movie-year {
+    bottom: 60px;
+}
+
+.movie-card:hover .movie-info {
+	right: 40px;
+}
+
+.popup {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100vw;
+	height: 100vh;
+	background-color: #DAEAF1;
+
+	overflow-y: scroll;
+}
+
+.popup .content {
+	display: block;
+	width: 100%;
+	max-width: 960px;
+	margin: 0 auto;
+	padding: 25px;
+
+	color: black;
+}
+
+.popup .content h2 {
+	font-size: 40px;
+    font-weight: 700;
+}
+
+.popup .content .rating {
+    font-size: 25px;
+	margin-bottom: 30px;
+}
+
+.popup .content .plot {
+	display: flex;
+	flex-wrap: wrap;
+	margin: 0px -15px 30px;
+}
+
+.popup .content .plot img {
+	flex: 1 1 50%;
+	max-width: 400px;
+	padding: 0px 15px;
+}
+
+.popup .content .plot p {
+    font-size: 25px;
+	flex: 1 1 50%;
+	padding: 15px;
+    font-weight: 500;
+}
+
+.popup .content .plot p div {
+    font-weight: 300;
+}
+
+#blank{
+    height: 20%
+}
+
+.popup .content .close {
+	display: inline-block;
+	padding: 15px 30px;
+	font-size: 18px;
+	font-weight: 700;
+
+	background: #4484C4;
+	color: #FFF;
+	border-radius: 8px;
+	border: none;
+	outline: none;
+	appearance: none;
+	cursor: pointer;
+
+	transition: 0.4s ease-out;
+}
